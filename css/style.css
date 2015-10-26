@@ -75,6 +75,10 @@ label{
   -webkit-box-shadow: none;
   margin: 0 auto;
 }
+
+#p-header{
+  border-color: white;
+}
 .rslides_tabs {
   list-style: none;
   padding: 0;
