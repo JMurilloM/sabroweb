@@ -546,7 +546,7 @@ font-size: 26px;
 }
 .banner-info {
 width: 43%;
-float:right;
+float:left;
 margin-top: 182px;
 }
 .banner-info a{
@@ -667,6 +667,10 @@ width:75%;
 }
 .services-bottom-grd-left img{
 width:100%;
+}
+
+.text-white{
+  color: white;
 }
 .time-service {
     position: absolute;
