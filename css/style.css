@@ -669,6 +669,10 @@ width:75%;
 .services-bottom-grd-left img{
 width:100%;
 }
+
+.text-white{
+  color: white;
+}
 .time-service {
     position: absolute;
     top: 41%;
