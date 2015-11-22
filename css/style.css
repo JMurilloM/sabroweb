@@ -950,11 +950,11 @@ text-decoration:none;
 	}
 .blog-pagenat ul li a {
   display: block;
-  background: #fff;
+  /*background: #fff;*/
   padding: 8px 1.1em;
   font-size: 0.9em;
   text-transform: uppercase;
-  color:#FCB2B2;
+  /*color:#FCB2B2;*/
   font-weight: 400;
   display: inline-block;
   margin-top: 1em;
@@ -975,7 +975,7 @@ text-decoration:none;
 }
 .blog-pagenat ul li a {
   display: block;
-  background: #fff;
+  /*background: #fff;*/
   padding: 8px 1.1em;
   font-size: 0.9em;
   text-transform: uppercase;
@@ -987,7 +987,12 @@ text-decoration:none;
   border: 1px solid #eaeaea;
 }
 .blog-pagenat ul li a:hover {
-   background-color:#ff5735;
+  background-color:#ff5735;
+  color:#fff;
+  border: 1px solid #eaeaea;
+}
+.active-blog{
+  background-color:#ff5735;
   color:#fff;
   border: 1px solid #eaeaea;
 }
