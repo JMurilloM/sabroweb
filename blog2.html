@@ -1,8 +1,57 @@
-
 <body>
+<!-- header -->
+<div class="header-top">
+	<div class="container">
+				<div class="header-top-left">
+					<p>Saboreate con saladitos sabroricos</p>
+				</div>
+				<div class="header-top-mid">
+					<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span><p>664-525-6812</p>
+				</div>
+				<div class="header-top-right">
+					<ul>
+						<li><a href="https://www.facebook.com/Sabroricos" class="f1"> </a></li>
+						<li><a href="https://www.facebook.com/Sabroricos" class="f2"> </a></li>
+						
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //header -->
 <!-- strip -->
 <div class="strip"></div>
 <!-- //strip -->
+<!-- logo -->
+<div class="logo-head">
+	<div class="container">
+		<div class="logo">
+			<h1><a href="index.html"><img src="images/logo.png" alt=""/></a></h1>
+		</div>
+		<div class="navigation">
+				<span class="menu"><img src="images/menu.png" alt=""/></span>
+				<div class="clearfix"></div>
+				<ul class="nav1">
+					<li><a class="hvr-overline-from-center button2" href="about.html">ACERCA</a></li>
+					<li><a class="hvr-overline-from-center button2" href="services.html">SERVICIOS</a></li>
+					<li><a class="active hvr-overline-from-center button2" href="blog.html">PRODUCTOS</a></li>
+					<li><a class="hvr-overline-from-center button2" href="gallery.html">GALERIA</a></li>	
+					<li><a class="hvr-overline-from-center button2" href="contact.html">CONTACTO</a></li>
+					<li><a class="hvr-overline-from-center button2" href="typography.html">COTIZA</a></li>
+				</ul>
+				<!-- script for menu -->
+					<script> 
+						$( "span.menu" ).click(function() {
+						$( "ul.nav1" ).slideToggle( 300, function() {
+						 // Animation complete.
+						});
+						});
+					</script>
+				<!-- //script for menu -->	
+		</div>
+	</div>
+</div>
+<!-- //logo -->
 <!-- banner -->
 <div class="banner page-head">	
 </div>
@@ -76,12 +125,12 @@
 	<!--start-news-pagenate-->
 				<div class="blog-pagenat">
 					<ul>
-						<li><a class="frist" href="#productos4">Anterior</a></li>
-						<li><a id="active-blog">1</a></li>
-						<li><a href="#productos2">2</a></li>
+						<li><a class="frist" href="#productos">Anterior</a></li>
+						<li><a href="#productos">1</a></li>
+						<li><a id="active-blog">2</a></li>
 						<li><a href="#productos3">3</a></li>
-						<li><a href="#productos3">4</a></li>
-						<li><a class="last" href="#productos2">Siguiente</a></li>
+						<li><a href="#productos4">4</a></li>
+						<li><a class="last" href="#productos3">Siguiente</a></li>
 					</ul>
 				</div>
 			<!--//End-news-pagenate-->

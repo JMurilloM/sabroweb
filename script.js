@@ -17,8 +17,28 @@
 				templateUrl : 'blog.html',
 				controller  : 'mainController'
 			})
+			.when('/productos2', {
+				templateUrl : 'blog2.html',
+				controller  : 'mainController'
+			})
+			.when('/productos3', {
+				templateUrl : 'blog3.html',
+				controller  : 'mainController'
+			})
+			.when('/productos4', {
+				templateUrl : 'blog4.html',
+				controller  : 'mainController'
+			})
 			.when('/galeria', {
 				templateUrl : 'gallery.html',
+				controller  : 'mainController'
+			})
+			.when('/galeria2', {
+				templateUrl : 'gallery2.html',
+				controller  : 'mainController'
+			})
+			.when('/galeria3', {
+				templateUrl : 'gallery3.html',
 				controller  : 'mainController'
 			})
 			.when('/contacto', {
