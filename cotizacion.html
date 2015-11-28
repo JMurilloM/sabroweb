@@ -1,0 +1,162 @@
+<body>
+<!-- banner -->
+<div class="banner page-head">	
+</div>
+<!-- //banner -->
+<!--typo-starts-->
+<head>
+	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        <style>
+#inline-block{
+	display: inline-block;
+}
+
+.seccion{
+	margin: 10px;
+	width: 22%;
+	display: inline-block;
+	text-align: center;
+	border-bottom: 2px solid #2A73DD;
+}
+
+.colorseccion{
+	background: #F8F8F8;
+}
+
+.cotiza-box{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.red{
+opacity: .2;
+}
+
+.image{
+	cursor: pointer;
+	background: #B1B1FF;
+}
+
+.image:hover{
+	background: #B1B1FF;
+	opacity: .7;
+}
+
+#objeto{
+	height: 100px;
+	width: 100px;
+}
+
+#activador{
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+#disable{
+	pointer-events: none;
+}
+
+.avoid-clicks {
+  pointer-events: none;
+}
+
+#btn-send{
+	background: #2A73DD;
+}
+
+.black-text{
+	color: black;
+}
+
+.seleccion{
+	color: #b1b1ff;
+}
+
+.blue{
+	background: #b1b1ff;
+}
+
+.inline-block{
+	display: inline-block;
+}
+
+.filter{
+	cursor: pointer;
+}
+
+.portfolio-filters{
+	margin:15px;
+}
+/*/2A73DD*/
+        </style>
+</head>
+
+<div class="typrography">
+	 <div class="container">
+	      <h3 class="tittle">COTIZACIón</h3>
+	      <div class="row center">
+		  
+	      	<div class="col-md-6">
+	      		<h4>Selecciona los dulces a cotizar <br> <br></h4>
+	      		<input type="text" class="form-control" ng-model="busqueda" placeholder="Buscar dulces">
+	      	</div>
+	      </div>
+	      <div class="row">
+	            	<div class="col-sm-12 portfolio-filters wow fadeInLeft">
+	            		<a class="filter" ng-click="busqueda=''">Todos</a> / 
+	            		<a class="filter" ng-click="busqueda='picosito'">Picositos</a> / 
+	            		<a class="filter" ng-click="busqueda='salado'">Salados</a> / 
+	            		<a class="filter" ng-click="busqueda='tamarindo'">Tamarindo</a>
+	            	</div>
+	      </div>
+	      <h5 class="black-text inline-block"><strong>Dulce(s) seleccionado(s):</strong> <div class="inline-block" ng-repeat="seleccion in dulcesSeleccionados">{{seleccion.nombreDulce+", "}}</div></h5>
+	      <div class="row">
+	         <div class="{{dulce.tipo}} seccion colorseccion" ng-repeat="dulce in dulces | filter:busqueda" ng-click="agregardulce(dulce,$index);" id="disable">
+	            	<div class="">
+	                	<div class="">
+	                		<img class="img-responsive image" src="{{dulce.imagen}}" id="activador"/>
+	                	</div>
+	                	<div class="cotiza-box">
+	                		<p class=""><strong>{{dulce.nombreDulce}}</strong></p>
+	                		<p class="">Descripcion</p>
+	                	</div>
+	                </div>
+	            </div>
+		</div>
+		<h5 class="black-text inline-block"><strong>Dulce(s) seleccionado(s):</strong> <div class="inline-block" ng-repeat="seleccion in dulcesSeleccionados">{{seleccion.nombreDulce+", "}}</div></h5>
+		<div class="row">
+		<div class="contact-form">
+				<h3><br>Completar cotización <br> <br><br></h3>
+				<div class="col-md-8 contact-grid">
+					<form>
+						{{dulcesSeleccionados.nombre}}
+						<p class="your-para">Nombre:</p>
+						<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+						<p class="your-para">Correo:</p>
+						<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+						<p class="your-para">Mensaje:</p>
+						<textarea onfocus="this.value='';" onblur="if (this.value == '') {this.value = '';}"></textarea>
+						<div class="send">
+							<input type="submit" value="Enviar" >
+						</div>
+					</form>
+				</div>				
+				<div class="col-md-4 contact-grid">
+					<p>Envia tu solicitud de cotización personalizada, muy pronto de responderemos !</p>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- //typo-page -->
+<!--typo-ends--> 
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- smooth scrolling -->
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>

@@ -1,9 +1,10 @@
-var dulces=angular.module('dulces',['ngRoute']);
+var dulces=angular.module('dulces',[]);
 
 dulces.controller('main', function($scope){
 	
 	$scope.control=1;
-	$scope.sp=" ";
+	$scope.sp="";
+	$scope.saludo="Hola";
 	$scope.dulces=[
 		{nombreDulce:"Dulce picosito 1", control:false, tipo:"picosito", imagen:"assets/img/portfolio/sabroricos-20.jpg",seleccion:""},
 		{nombreDulce:"Dulce picosito 2", control:false, tipo:"picosito", imagen:"assets/img/portfolio/sabroricos-24.jpg",seleccion:""},
@@ -29,40 +30,6 @@ dulces.controller('main', function($scope){
 	}
 });
 
-	app.controller('mainController', function($scope) {
-		// create a message to display in our view
-		$scope.message = 'Everyone come and see how good I look!';
-	});
-
-	app.controller('aboutController', function($scope) {
-		$scope.message = 'Look! I am an about page.';
-	});
-
-	app.controller('contactController', function($scope) {
-		$scope.message = 'Contact us! JK. This is just a demo.';
-	});
-
- app.config(function($routeProvider) {
-		$routeProvider
-
-			// route for the home page
-			.when('/', {
-				templateUrl : 'views/header.html',
-				controller  : 'main'
-			})
-
-			// route for the about page
-			.when('/about', {
-				templateUrl : 'views/header.html',
-				controller  : 'main'
-			})
-
-			// route for the contact page
-			.when('/contact', {
-				templateUrl : 'views/header.html',
-				controller  : 'main'
-			});
-	});
 
 // var fun=function (e) {
 // 	var objetc=[];

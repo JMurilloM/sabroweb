@@ -46,14 +46,54 @@
 				controller  : 'mainController'
 			})
 			.when('/cotizacion', {
-				templateUrl : 'typography.html',
-				controller  : 'mainController'
+				templateUrl : 'cotizacion.html',
+				controller  : 'main'
 			})
 			.when('/servicios', {
 				templateUrl : 'services.html',
 				controller  : 'mainController'
 			});
 	});
+
 	app.controller('mainController', function($scope) {
 		$scope.message = '';
+		$scope.saludo="Hola";
 	});
+
+	app.controller('main', function($scope){
+	
+	$scope.control=1;
+	$scope.sp="";
+	$scope.saludo="Hola";
+	$scope.dulces=[
+		{nombreDulce:"Dulce picosito 1", control:false, tipo:"picosito", imagen:"images/productos/sabroricos-20.jpg",seleccion:""},
+		{nombreDulce:"Dulce picosito 2", control:false, tipo:"picosito", imagen:"images/productos/sabroricos-24.jpg",seleccion:""},
+		{nombreDulce:"Dulce salado 2", control:false, tipo:"salado", imagen:"images/productos/sabroricos-26.jpg",seleccion:""},
+		{nombreDulce:"Dulce salado 3", control:false, tipo:"salado", imagen:"images/productos/sabroricos-33.jpg",seleccion:""},
+		{nombreDulce:"Dulce tamarindo 2", control:false, tipo:"tamarindo", imagen:"images/productos/sabroricos-35.jpg",seleccion:""},
+		{nombreDulce:"Dulce tamarindo 3", control:false, tipo:"tamarindo", imagen:"images/productos/sabroricos-40.jpg",seleccion:""}
+	];
+	$scope.dulcesSeleccionados=[];
+
+	$scope.agregardulce=function (dulce, control) {
+		if (dulce.control) {
+			var index = $scope.dulcesSeleccionados.indexOf(control)
+  			$scope.dulcesSeleccionados.splice(index, 1);
+			$scope.dulces[control].control=false;
+			$scope.dulces[control].seleccion="";
+		}else{
+			$scope.dulcesSeleccionados.push(dulce);
+			$scope.dulces[control].control=true;
+			$scope.dulces[control].seleccion="Seleccionada";
+			
+		}
+	}
+});
+
+
+$(document).ready(function() {
+	$("#activador").click(function(){
+    alert();
+    //$(this).toggleClass('opacity');
+	});
+});

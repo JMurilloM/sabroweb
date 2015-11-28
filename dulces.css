@@ -11,6 +11,15 @@
 	width: 100px;
 }
 
+#activador{
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+#disable{
+	pointer-events: none;
+}
+
 .avoid-clicks {
   pointer-events: none;
 }
