@@ -73,27 +73,25 @@
 		{nombreDulce:"Dulce tamarindo 2", control:false, tipo:"tamarindo", imagen:"images/productos/sabroricos-35.jpg",seleccion:""},
 		{nombreDulce:"Dulce tamarindo 3", control:false, tipo:"tamarindo", imagen:"images/productos/sabroricos-40.jpg",seleccion:""}
 	];
+	
 	$scope.dulcesSeleccionados=[];
+
+	$(document).ready(function(){
+    $(".box-img").click(function(){
+        alert("a");
+    });
+	});
 
 	$scope.agregardulce=function (dulce, control) {
 		if (dulce.control) {
 			var index = $scope.dulcesSeleccionados.indexOf(control)
-  			$scope.dulcesSeleccionados.splice(index, 1);
+  			$scope.dulcesSeleccionados.splice(dulce, 1);
 			$scope.dulces[control].control=false;
-			$scope.dulces[control].seleccion="";
 		}else{
 			$scope.dulcesSeleccionados.push(dulce);
 			$scope.dulces[control].control=true;
-			$scope.dulces[control].seleccion="Seleccionada";
-			
 		}
 	}
 });
 
 
-$(document).ready(function() {
-	$("#activador").click(function(){
-    alert();
-    //$(this).toggleClass('opacity');
-	});
-});

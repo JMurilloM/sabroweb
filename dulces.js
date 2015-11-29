@@ -21,6 +21,8 @@ dulces.controller('main', function($scope){
   			$scope.dulcesSeleccionados.splice(index, 1);
 			$scope.dulces[control].control=false;
 			$scope.dulces[control].seleccion="";
+			var elemento=document.getElementById(control);
+			alert(elemento);
 		}else{
 			$scope.dulcesSeleccionados.push(dulce);
 			$scope.dulces[control].control=true;
@@ -48,10 +50,3 @@ dulces.controller('main', function($scope){
 // 		}
 // 	}
 // }
-
-$(document).ready(function(){
-    $(".image").click(function(){
-        $(this).toggleClass('red');
-        $(".box-select").toggleClass("seleccion");
-    });
-});

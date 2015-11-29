@@ -6,7 +6,7 @@
 <!--typo-starts-->
 <head>
 	
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
         
         <style>
 #inline-block{
@@ -38,6 +38,10 @@ opacity: .2;
 	background: #B1B1FF;
 }
 
+.opacity{
+	opacity: .3;
+}
+
 .image:hover{
 	background: #B1B1FF;
 	opacity: .7;
@@ -50,15 +54,15 @@ opacity: .2;
 
 #activador{
 	cursor: pointer;
-	pointer-events: auto;
+	/*pointer-events: auto;*/
 }
 
 #disable{
-	pointer-events: none;
+	/*pointer-events: none;*/
 }
 
 .avoid-clicks {
-  pointer-events: none;
+  /*pointer-events: none;*/
 }
 
 #btn-send{
@@ -88,6 +92,10 @@ opacity: .2;
 .portfolio-filters{
 	margin:15px;
 }
+
+.box-img{
+	background: red;
+}
 /*/2A73DD*/
         </style>
 </head>
@@ -110,11 +118,19 @@ opacity: .2;
 	            		<a class="filter" ng-click="busqueda='tamarindo'">Tamarindo</a>
 	            	</div>
 	      </div>
+	      <script>
+			$(document).ready(function() {
+				$(".image").click(function(){
+			    alert("a");
+			    //$(this).toggleClass('opacity');
+				});
+			});
+		   </script>
 	      <h5 class="black-text inline-block"><strong>Dulce(s) seleccionado(s):</strong> <div class="inline-block" ng-repeat="seleccion in dulcesSeleccionados">{{seleccion.nombreDulce+", "}}</div></h5>
 	      <div class="row">
-	         <div class="{{dulce.tipo}} seccion colorseccion" ng-repeat="dulce in dulces | filter:busqueda" ng-click="agregardulce(dulce,$index);" id="disable">
+	         <div class="{{dulce.tipo}} seccion colorseccion" ng-repeat="dulce in dulces | filter:busqueda" ng-click="agregardulce(dulce,$index);" id="disable {{$index}}">
 	            	<div class="">
-	                	<div class="">
+	                	<div class="box-img">
 	                		<img class="img-responsive image" src="{{dulce.imagen}}" id="activador"/>
 	                	</div>
 	                	<div class="cotiza-box">
@@ -154,7 +170,7 @@ opacity: .2;
 <!--typo-ends--> 
 <!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
+	<!-- //for bootstrap working -->
 <!-- smooth scrolling -->
 	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <!-- //smooth scrolling -->
