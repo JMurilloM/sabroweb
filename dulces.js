@@ -6,12 +6,29 @@ dulces.controller('main', function($scope){
 	$scope.sp="";
 	$scope.saludo="Hola";
 	$scope.dulces=[
-		{nombreDulce:"Dulce picosito 1", control:false, tipo:"picosito", imagen:"assets/img/portfolio/sabroricos-20.jpg",seleccion:""},
-		{nombreDulce:"Dulce picosito 2", control:false, tipo:"picosito", imagen:"assets/img/portfolio/sabroricos-24.jpg",seleccion:""},
-		{nombreDulce:"Dulce salado 2", control:false, tipo:"salado", imagen:"assets/img/portfolio/sabroricos-26.jpg",seleccion:""},
-		{nombreDulce:"Dulce salado 3", control:false, tipo:"salado", imagen:"assets/img/portfolio/sabroricos-33.jpg",seleccion:""},
-		{nombreDulce:"Dulce tamarindo 2", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-35.jpg",seleccion:""},
-		{nombreDulce:"Dulce tamarindo 3", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""}
+
+
+		{nombreDulce:"Gomiricas de Naranja", control:false, tipo:"picosito", imagen:"assets/img/portfolio/sabroricos-20.jpg",seleccion:""},
+		{nombreDulce:"Gomirica de durazno", control:false, tipo:"picosito", imagen:"assets/img/portfolio/sabroricos-24.jpg",seleccion:""},
+		{nombreDulce:"Serpentina con saladillos", control:false, tipo:"salado", imagen:"assets/img/portfolio/sabroricos-26.jpg",seleccion:""},
+		{nombreDulce:"Guayaba con chile", control:false, tipo:"salado", imagen:"assets/img/portfolio/sabroricos-33.jpg",seleccion:""},
+		{nombreDulce:"Rielito con chile", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-35.jpg",seleccion:""},
+		{nombreDulce:"Gomirica de gusano", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Saladito con Chile y Limón", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Saladito con sal", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Paleta con sal", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Salado adobado", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Mango con chile", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Piña con Chile", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Pulpa tochito para escarchar", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Gomirica de Sandia", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Gomirica de Naranja", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Gomirica de Durazno", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Salado con limón", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Chamoy con Ciruela", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Chamoy con Mango", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Tochomorocho", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""},
+		{nombreDulce:"Gomirica de Mango", control:false, tipo:"tamarindo", imagen:"assets/img/portfolio/sabroricos-40.jpg",seleccion:""}
 	];
 	$scope.dulcesSeleccionados=[];
 

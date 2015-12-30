@@ -66,13 +66,29 @@
 	$scope.sp="";
 	$scope.saludo="Hola";
 	$scope.dulces=[
-		{nombreDulce:"Dulce picosito 1", control:false, tipo:"picosito", imagen:"images/productos/sabroricos-20.jpg",seleccion:""},
-		{nombreDulce:"Dulce picosito 2", control:false, tipo:"picosito", imagen:"images/productos/sabroricos-24.jpg",seleccion:""},
-		{nombreDulce:"Dulce salado 2", control:false, tipo:"salado", imagen:"images/productos/sabroricos-26.jpg",seleccion:""},
-		{nombreDulce:"Dulce salado 3", control:false, tipo:"salado", imagen:"images/productos/sabroricos-33.jpg",seleccion:""},
-		{nombreDulce:"Dulce tamarindo 2", control:false, tipo:"tamarindo", imagen:"images/productos/sabroricos-35.jpg",seleccion:""},
-		{nombreDulce:"Dulce tamarindo 3", control:false, tipo:"tamarindo", imagen:"images/productos/sabroricos-40.jpg",seleccion:""}
+		{nombreDulce:"Gomiricas de Naranja", control:false, tipo:"picosito", imagen:"img/productos/producto15-3.jpg",seleccion:""},
+		{nombreDulce:"Gomirica de durazno", control:false, tipo:"picosito", imagen:"img/productos/producto16-3.jpg",seleccion:""},
+		{nombreDulce:"Serpentina con saladillos", control:false, tipo:"salado", imagen:"img/productos/producto1-1.jpg",seleccion:""},
+		{nombreDulce:"Guayaba con chile", control:false, tipo:"picosito", imagen:"img/productos/producto3-3.jpg",seleccion:""},
+		{nombreDulce:"Rielito con chile", control:false, tipo:"picosito", imagen:"img/productos/producto4-2.jpg",seleccion:""},
+		{nombreDulce:"Gomirica de gusano", control:false, tipo:"picosito", imagen:"img/productos/producto5-1.jpg",seleccion:""},
+		{nombreDulce:"Saladito con Chile y Limón", control:false, tipo:"salado", imagen:"img/productos/producto6-1.jpg",seleccion:""},
+		{nombreDulce:"Saladito con sal", control:false, tipo:"salado", imagen:"img/productos/producto7-1.jpg",seleccion:""},
+		{nombreDulce:"Paleta con sal", control:false, tipo:"salado", imagen:"img/productos/producto8-1.jpg",seleccion:""},
+		{nombreDulce:"Salado adobado", control:false, tipo:"salado", imagen:"img/productos/producto10-1.jpg",seleccion:""},
+		{nombreDulce:"Mango con chile", control:false, tipo:"picosito", imagen:"img/productos/producto11-2.jpg",seleccion:""},
+		{nombreDulce:"Piña con Chile", control:false, tipo:"picosito", imagen:"img/productos/producto12-2.jpg",seleccion:""},
+		{nombreDulce:"Pulpa tochito para escarchar", control:false, tipo:"salado", imagen:"img/productos/producto13-1.jpg",seleccion:""},
+		{nombreDulce:"Gomirica de Sandia", control:false, tipo:"picosito", imagen:"img/productos/producto14-1.jpg",seleccion:""},
+		{nombreDulce:"Gomirica de Naranja", control:false, tipo:"picosito", imagen:"img/productos/producto15-4.jpg",seleccion:""},
+		{nombreDulce:"Gomirica de Durazno", control:false, tipo:"picosito", imagen:"img/productos/producto16-1.jpg",seleccion:""},
+		{nombreDulce:"Salado con limón", control:false, tipo:"salado", imagen:"img/productos/producto17-1.jpg",seleccion:""},
+		{nombreDulce:"Chamoy con Ciruela", control:false, tipo:"salado", imagen:"img/productos/producto18-1.jpg",seleccion:""},
+		{nombreDulce:"Chamoy con Mango", control:false, tipo:"picosito", imagen:"img/productos/producto19-1.jpg",seleccion:""},
+		{nombreDulce:"Tochomorocho", control:false, tipo:"picosito", imagen:"img/productos/producto20-2.jpg",seleccion:""},
+		{nombreDulce:"Gomirica de Mango", control:false, tipo:"picosito", imagen:"img/productos/producto15-1.jpg",seleccion:""}
 	];
+
 	
 	$scope.dulcesSeleccionados=[];
 
